@@ -1,0 +1,18 @@
+WIRESHARK QUICK PRACTICAL
+=========================
+1. Open Wireshark.
+2. Select the interface carrying traffic:
+   - localhost / 127.0.0.1 traffic: loopback interface (often lo)
+   - NS-3 PCAP files: File > Open and select the generated .pcap file.
+3. Start capture, run the client, stop capture.
+4. Apply display filters:
+   tcp
+   udp
+   http
+   dns
+   tcp.port == 8080
+   udp.port == 5353
+5. Click a packet, expand Transmission Control Protocol / User Datagram Protocol.
+6. Record source/destination addresses, ports, packet length, TCP flags, HTTP status
+   or DNS query/reply as appropriate.
+7. Do not write invented packet numbers/status codes. Use what your capture shows.
